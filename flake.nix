@@ -197,6 +197,10 @@
         fastfetch = {
           enable = true;
         };
+        # Better find
+        fd = {
+            enable = true;
+        };
         gh = {
           enable = true;
         };
