@@ -222,6 +222,9 @@
         neovim = {
           enable = true;
         };
+        ripgrep = {
+          enable = true;
+        };
         tmux = {
           enable = true;
         };
