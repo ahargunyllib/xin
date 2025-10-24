@@ -184,6 +184,11 @@
         btop = {
           enable = true;
         };
+        direnv = {
+          enable = true;
+          enableZshIntegration = true;
+          nix-direnv.enable = true;
+        };
         # Better ls
         eza = {
           enable = true;
