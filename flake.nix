@@ -69,6 +69,7 @@
           "arc"
           "steam"
           "orbstack"
+          "android-studio"
         ];
         masApps = {
           "WhatsApp Messenger" = 310633997;
