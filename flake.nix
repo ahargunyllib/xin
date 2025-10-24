@@ -68,6 +68,7 @@
           "raycast"
           "arc"
           "steam"
+          "orbstack"
         ];
         masApps = {
           "WhatsApp Messenger" = 310633997;
