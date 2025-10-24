@@ -209,6 +209,9 @@
           enableZshIntegration = true;
         };
         home-manager.enable = true;
+        lazygit = {
+          enable = true;
+        };
         neovim = {
           enable = true;
         };
