@@ -29,14 +29,14 @@
   let
     configuration = { pkgs, ... }: {
       environment.systemPackages =
-        [ 
+        [
           pkgs.brave
           pkgs._1password-gui
           pkgs.discord
           # pkgs.code-cursor
           # pkgs.spotify
           # pkgs.ghostty
-          
+
           # pkgs.httpie-desktop
           # pkgs.postman
           # pkgs.burpsuite
@@ -45,7 +45,7 @@
           # pkgs.ngrok
           # pkgs.zoom-us
           # pkgs.awscli2
-          
+
           # pkgs.nodejs
           # pkgs.pnpm
           # pkgs.yarn
@@ -67,7 +67,7 @@
           "spotify"
           "raycast"
           "arc"
-	  "steam"
+          "steam"
         ];
         masApps = {
           "WhatsApp Messenger" = 310633997;
@@ -167,7 +167,7 @@
       home = {
         username = "ahargunyllib";
         homeDirectory = "/Users/ahargunyllib";
-        file = { 
+        file = {
           ".config/ghostty".source = ./modules/home-manager/ghostty;
         };
         sessionVariables = { };
@@ -262,7 +262,7 @@
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#main
     darwinConfigurations."main" = nix-darwin.lib.darwinSystem {
-      modules = [ 
+      modules = [
       	configuration
 	      nix-homebrew.darwinModules.nix-homebrew
 	      {
