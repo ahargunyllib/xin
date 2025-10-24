@@ -67,6 +67,7 @@
           "spotify"
           "raycast"
           "arc"
+	  "steam"
         ];
         masApps = {
           "WhatsApp Messenger" = 310633997;
