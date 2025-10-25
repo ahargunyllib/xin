@@ -225,6 +225,7 @@
         };
         neovim = {
           enable = true;
+          withNodeJs = true;
         };
         ripgrep = {
           enable = true;
