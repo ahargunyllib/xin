@@ -42,7 +42,7 @@
           # pkgs.burpsuite
           # pkgs.beekeepeer-studio
           # pkgs.eduvpn-client
-          # pkgs.ngrok
+          pkgs.ngrok
           # pkgs.zoom-us
           # pkgs.awscli2
 
@@ -70,6 +70,8 @@
           "steam"
           "orbstack"
           "android-studio"
+          "beekeeper-studio"
+          "apidog"
         ];
         masApps = {
           "WhatsApp Messenger" = 310633997;
