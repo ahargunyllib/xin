@@ -72,6 +72,8 @@
           "android-studio"
           "beekeeper-studio"
           "apidog"
+          "burp-suite"
+          "zoom"
         ];
         masApps = {
           "WhatsApp Messenger" = 310633997;
@@ -184,6 +186,12 @@
           enableZshIntegration = true;
         };
         btop = {
+          enable = true;
+        };
+        bun = {
+          enable = true;
+        };
+        claude-code = {
           enable = true;
         };
         direnv = {
