@@ -32,7 +32,7 @@
         [
           pkgs.brave
           pkgs._1password-gui
-          pkgs.discord
+          # pkgs.discord
           # pkgs.code-cursor
           # pkgs.spotify
           # pkgs.ghostty
