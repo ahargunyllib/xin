@@ -74,6 +74,7 @@
           "apidog"
           "burp-suite"
           "zoom"
+          "bruno"
         ];
         masApps = {
           "WhatsApp Messenger" = 310633997;
