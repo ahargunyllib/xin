@@ -31,7 +31,7 @@
       environment.systemPackages =
         [
           pkgs.brave
-          pkgs._1password-gui
+          # pkgs._1password-gui
           # pkgs.discord
           # pkgs.code-cursor
           # pkgs.spotify
