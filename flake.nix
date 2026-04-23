@@ -43,6 +43,7 @@
           # pkgs.beekeepeer-studio
           # pkgs.eduvpn-client
           pkgs.ngrok
+          pkgs.infisical
           # pkgs.zoom-us
           # pkgs.awscli2
 
@@ -178,7 +179,7 @@
           ".config/ghostty".source = ./modules/home-manager/ghostty;
         };
         sessionVariables = { };
-        stateVersion = "25.11";
+        stateVersion = "26.05";
       };
 
       programs = {
