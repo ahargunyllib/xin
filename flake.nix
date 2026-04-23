@@ -231,7 +231,9 @@
           enable = true;
           enableZshIntegration = true;
         };
-        home-manager.enable = true;
+        home-manager = {
+          enable = true;
+        };
         lazygit = {
           enable = true;
         };
@@ -328,6 +330,7 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.ahargunyllib = home-configuration;
+            backupFileExtension = "backup";
           };
         }
       ];
