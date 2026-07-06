@@ -44,11 +44,12 @@
           # pkgs.eduvpn-client
           pkgs.ngrok
           pkgs.infisical
+          pkgs.cocoapods   # iOS/macOS pod install (Flutter native deps)
           # pkgs.zoom-us
           # pkgs.awscli2
 
-          # pkgs.nodejs
-          # pkgs.pnpm
+          pkgs.nodejs
+          pkgs.pnpm
           # pkgs.yarn
           # pkgs.biome
           # pkgs.bun
@@ -90,6 +91,16 @@
       ];
 
       nix.settings.experimental-features = "nix-command flakes";
+
+      # Auto garbage-collect generasi lama tiap Minggu 03:00, simpan yang < 30 hari.
+      nix.gc = {
+        automatic = true;
+        interval = { Weekday = 0; Hour = 3; Minute = 0; };
+        options = "--delete-older-than 30d";
+      };
+
+      # Auto hardlink file identik di /nix/store (dedup, hemat ruang).
+      nix.optimise.automatic = true;
 
       nixpkgs = {
         config.allowUnfree = true;
