@@ -31,32 +31,11 @@
       environment.systemPackages =
         [
           pkgs.brave
-          # pkgs._1password-gui
-          # pkgs.discord
-          # pkgs.code-cursor
-          # pkgs.spotify
-          # pkgs.ghostty
 
-          # pkgs.httpie-desktop
-          # pkgs.postman
-          # pkgs.burpsuite
-          # pkgs.beekeepeer-studio
-          # pkgs.eduvpn-client
-          pkgs.ngrok
           pkgs.infisical
-          pkgs.cocoapods   # iOS/macOS pod install (Flutter native deps)
-          # pkgs.zoom-us
-          # pkgs.awscli2
 
           pkgs.nodejs
           pkgs.pnpm
-          # pkgs.yarn
-          # pkgs.biome
-          # pkgs.bun
-          # pkgs.uv
-          # pkgs.go
-          # pkgs.go-task
-          # pkgs.php
         ];
 
       homebrew = {
@@ -71,15 +50,11 @@
           "arc"
           "steam"
           "orbstack"
-          "android-studio"
           "beekeeper-studio"
-          "apidog"
-          "burp-suite"
           "zoom"
           "bruno"
         ];
         masApps = {
-          "WhatsApp Messenger" = 310633997;
         };
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
@@ -108,9 +83,6 @@
       };
 
       programs = {
-        # _1password-gui = {
-        #   enable = true;
-        # };
       };
 
       system = {
@@ -212,7 +184,6 @@
           enableZshIntegration = true;
           nix-direnv.enable = true;
         };
-        # Better ls
         eza = {
           enable = true;
           enableZshIntegration = true;
@@ -220,7 +191,6 @@
         fastfetch = {
           enable = true;
         };
-        # Better find
         fd = {
             enable = true;
         };
@@ -237,10 +207,10 @@
             init.defaultBranch = "main";
           };
         };
-        # Fuzzy finder
         fzf = {
           enable = true;
           enableZshIntegration = true;
+          historyWidget.command = "";
         };
         home-manager = {
           enable = true;
@@ -261,12 +231,10 @@
         vscode = {
           enable = true;
         };
-        # Terminal file manager
         yazi = {
           enable = true;
           enableZshIntegration = true;
         };
-        # Smarter cd
         zoxide = {
           enable = true;
           enableZshIntegration = true;
